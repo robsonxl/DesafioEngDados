@@ -30,7 +30,7 @@
 
 ### Quantidade de requisições de um determinado httpStatusCode agrupado por por data
 
-      http://localhost:8080//logs/request/totalHttpCodeByDate?httpCode=200
+      http://localhost:8080/logs/request/totalHttpCodeByDate?httpCode=200
 
 
 
