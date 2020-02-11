@@ -1,6 +1,39 @@
 # DesafioEngDados
 
-QUESTÔES:
+# API Arquivo de Logs Nasa Kennedy Space 
+            Para executar a api é necessario ter o docker instalado na máquina, depois executar o comando abaixo:
+            docker run -it -p 8080:8080 robsonxlima/nasa-kennedy-logs
+            
+### Quantidade de Requisições agrupados por Hosts
+
+            http://localhost:8080/logs/request/totalGroupHost
+
+### Numeros de hosts únios.
+
+            http://localhost:8080/logs/request/totalHost
+
+### Total de erros 404
+
+            http://localhost:8080/logs/request/totalHttpCode?httpCode=404
+
+### Quantidade de requisições de um determinado httpStatusCode agrupado por por data
+
+      http://localhost:8080//logs/request/totalHttpCodeByDate?httpCode=200
+
+### Os 5 URLs que mais causaram erro 404.
+
+      http://localhost:8080/logs/request/topUrl?httpCode=404&topNumber=5
+
+### Quantidade de erros 404 por dia.
+
+      http://localhost:8080/logs/request/totalHttpCodeByDate?httpCode=404
+
+### O total de bytes retornados.
+
+      http://localhost:8080/logs/request/totalBytes
+
+
+# QUESTÕES:
 
 ### 1-) Qual o objetivo do comando cache em Spark?
 
